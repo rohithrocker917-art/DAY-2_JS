@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohith K Resume</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 30px;
+        background: #f2f2f2;
+        font-family: "Times New Roman", Times, serif;
+      }
+      button {
+        background-color: #000101;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .resume {
+        width: 800px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border: 1px solid #ccc;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .left {
+        width: 72%;
+      }
+
+      .right {
+        width: 25%;
+        text-align: right;
+      }
+
+      #profile {
+        width: 160px;
+        height: 190px;
+        object-fit: cover;
+        border: 2px solid #003366;
+        border-radius: 5px;
+      }
+
+      h1 {
+        margin: 0;
+        color: #003366;
+        text-align: left;
+      }
+
+      h3 {
+        margin-top: 5px;
+        color: gray;
+        font-weight: normal;
+      }
+
+      .contact {
+        margin-top: 15px;
+        border-bottom: 2px solid #003366;
+        padding-bottom: 15px;
+        line-height: 1.7;
+      }
+
+      .contact a {
+        color: #003366;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .dark-mode {
+        background-color: #1e1e1e;
+        color: #f2f2f2;
+      }
+      .contact a:hover {
+        text-decoration: underline;
+      }
+
+      h2 {
+        color: #003366;
+        border-bottom: 2px solid #003366;
+        padding-bottom: 5px;
+        margin-top: 25px;
+      }
+
+      p {
+        line-height: 1.6;
+        font-size: 17px;
+      }
+
+      ul {
+        line-height: 1.8;
+        font-size: 17px;
+      }
+      .dark-mode {
+        background-color: #1e1e1e;
+        color: #f2f2f2;
+      }
+      b {
+        color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume">
+      <div class="header">
+        <div class="left">
+          <h1>ROHITH K</h1>
+
+          <h3>AI-Driven Software Engineer</h3>
+
+          <div class="contact">
+            Chennai, India 600056 <br />
+
+            +91 9176544784 <br />
+
+            rohithhkaliraj@gmail.com <br />
+
+            <a href="https://www.linkedin.com/in/rohithk128" target="_blank"
+              >LinkedIn</a
+            >
+            |
+
+            <a href="https://github.com/rohithk128" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <br />>
+        <br />
+
+        <div class="right">
+          <img src="r1.jpeg" alt="Rohith Photo" id="profile" />
+          <button
+            id="dark mode"
+            onclick="myFunction()"
+            style="margin-right: 20px auto"
+          >
+            Dark Mode
+          </button>
+          <button id="show">Hide</button>
+        </div>
+      </div>
+
+      <h2>Executive Summary</h2>
+
+      <p>
+        Computer Science undergraduate skilled in building web applications
+        using React.js, JavaScript and Python. Strong foundation in
+        Object-Oriented Programming, Data Structures and UI/UX Design with
+        experience in developing academic and personal projects.
+      </p>
+
+      <h2>Skills</h2>
+
+      <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>React.js</li>
+        <li>Object-Oriented Programming</li>
+        <li>Data Structures & Algorithms</li>
+        <li>UI/UX Design Fundamentals</li>
+      </ul>
+
+      <h2>Education</h2>
+
+      <p>
+        <b>B.E Computer Science and Engineering</b><br />
+        S.A Engineering College, Thiruvallur<br />
+        CGPA: 8.12 / 10<br />
+        2023 - Present
+      </p>
+
+      <p>
+        <b>Higher Secondary Education</b><br />
+        Jaya Matriculation Higher Secondary School<br />
+        Score: 74%
+      </p>
+
+      <h2>Experience</h2>
+
+      <p>
+        <b>Design Team Head - Internship</b><br />
+        Amihive Software Solutions
+      </p>
+
+      <ul>
+        <li>Led the UI/UX design team.</li>
+        <li>Designed HRMS website modules.</li>
+        <li>Maintained design consistency across 50+ modules.</li>
+      </ul>
+
+      <h2>Projects</h2>
+
+      <p><b>Student Management System</b></p>
+
+      <ul>
+        <li>Developed using React.js.</li>
+        <li>Students can log in using Register Number and Password.</li>
+        <li>View attendance and absence records.</li>
+      </ul>
+
+      <p><b>Corpulse Learn</b></p>
+
+      <ul>
+        <li>Learning platform with employee skill development.</li>
+        <li>Helps improve productivity and wellness.</li>
+      </ul>
+
+      <h2>Certifications</h2>
+
+      <ul>
+        <li>Frontend Development - Infosys Springboard</li>
+        <li>NPTEL - Java Programming</li>
+        <li>NPTEL - Software Testing</li>
+        <li>AWS Cloud Fundamentals</li>
+        <li>AWS Cloud Practitioner</li>
+      </ul>
+    </div>
+    <script>
+      function myFunction() {
+        var element = document.querySelector(".resume");
+        element.classList.toggle("dark-mode");
+
+        var button = document.getElementById("dark mode");
+        button.textContent = element.classList.contains("dark-mode")
+          ? "Light Mode"
+          : "Dark Mode";
+      }
+
+      const button = document.getElementById("show");
+      const image = document.getElementById("profile");
+      button.addEventListener("click", function () {
+        if (image.style.visibility === "hidden") {
+          image.style.visibility = "visible";
+          button.textContent = "Hide";
+        } else {
+          image.style.visibility = "hidden";
+          button.textContent = "show";
+        }
+      });
+    </script>
+  </body>
+</html>
